@@ -1,0 +1,109 @@
+body{
+    background-color: rgb(25, 27, 37);
+    font-family: monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+h1{
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: rgb(207, 207, 207);
+    font-size: 2.6rem;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.portada {
+    width: 400px;
+    height: 400px;
+    object-fit: cover; 
+    border-radius: 200px;
+    cursor: pointer;
+}
+
+.descri{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 4px solid black;
+}
+
+section{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(131, 131, 131, 0);
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s;
+}
+
+.section--show{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+}
+
+.container{
+    position: relative;
+    width: 90%;
+    margin: auto;
+    background-color: rgb(131, 131, 131);
+    max-width: 1000px;
+    max-height: 90%;
+    border-radius: 10px;
+    padding: 3em 2.5em;
+    display: grid;
+    place-items: center;
+    grid-auto-columns: 100%;
+}
+
+.cerrar{
+    background-image: url(https://img.icons8.com/?size=100&id=111057&format=png&color=000000);
+    background-size: contain;
+    background-color: rgba(131, 131, 131, 0.342);
+    width: 25px;
+    height: 25px;
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;    
+    cursor: pointer;
+    border-radius: 5px;
+}
+.cerrar:hover,
+.cerrar:focus{
+    background-color: rgb(207, 207, 207);
+}
+
+.titul{
+    font-size: 2.5rem;
+    margin-bottom: 1px;
+}
+
+.sci{
+    font-size: 1.4rem;
+    margin-top: 10px;
+}
+
+.desc{
+    font-size: 1.2rem;;
+}
+
+p{
+    margin-top: 5px;
+    text-align: center;
+}
